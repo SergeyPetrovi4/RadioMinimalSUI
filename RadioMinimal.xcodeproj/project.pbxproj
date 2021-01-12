@@ -119,14 +119,14 @@
 			path = CellView;
 			sourceTree = "<group>";
 		};
-		67326C3125ADC8310024FE4B /* MainVontentView */ = {
+		67326C3125ADC8310024FE4B /* MainContentView */ = {
 			isa = PBXGroup;
 			children = (
 				674EFB092580D92F007B548C /* ContentView.swift */,
 				678DCC65259A7A5F00D2D6CB /* RadioItemsViewModel.swift */,
 				67326C3025ADC81F0024FE4B /* CellView */,
 			);
-			path = MainVontentView;
+			path = MainContentView;
 			sourceTree = "<group>";
 		};
 		67369A3B2593DD1800217B54 /* CustomControls */ = {
@@ -209,7 +209,7 @@
 		677FE9F325841C2C00ADE8AA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				67326C3125ADC8310024FE4B /* MainVontentView */,
+				67326C3125ADC8310024FE4B /* MainContentView */,
 				679262CF258DE60300850721 /* AddNewItem */,
 			);
 			path = Views;
