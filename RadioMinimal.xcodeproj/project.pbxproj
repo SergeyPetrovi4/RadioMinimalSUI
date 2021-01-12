@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		672493842588EFAC00651D0E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672493832588EFAC00651D0E /* NetworkManager.swift */; };
+		672BBBFB25889836006EEB65 /* RadioItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672BBBFA25889836006EEB65 /* RadioItem.swift */; };
+		67326C3325ADC8610024FE4B /* AddNewitemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67326C3225ADC8610024FE4B /* AddNewitemViewModel.swift */; };
+		67369A3D2593DDAB00217B54 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67369A3C2593DDAB00217B54 /* RoundedButton.swift */; };
+		67369A4525947B9D00217B54 /* ItemFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67369A4425947B9D00217B54 /* ItemFieldView.swift */; };
+		67369A4A25947BE000217B54 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67369A4925947BE000217B54 /* Title.swift */; };
+		674EFB082580D92F007B548C /* RadioMinimalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674EFB072580D92F007B548C /* RadioMinimalApp.swift */; };
+		674EFB0A2580D92F007B548C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674EFB092580D92F007B548C /* ContentView.swift */; };
+		674EFB0C2580D931007B548C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 674EFB0B2580D931007B548C /* Assets.xcassets */; };
+		674EFB0F2580D931007B548C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 674EFB0E2580D931007B548C /* Preview Assets.xcassets */; };
+		674EFB1A2580D932007B548C /* RadioMinimalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674EFB192580D932007B548C /* RadioMinimalTests.swift */; };
+		674EFB252580D932007B548C /* RadioMinimalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674EFB242580D932007B548C /* RadioMinimalUITests.swift */; };
+		674EFB362580E8F6007B548C /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674EFB352580E8F6007B548C /* ColorScheme.swift */; };
+		677FE9FD25841D4600ADE8AA /* PlayControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677FE9FC25841D4600ADE8AA /* PlayControlView.swift */; };
+		677FEA0325841D7100ADE8AA /* RadioItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677FEA0225841D7100ADE8AA /* RadioItemView.swift */; };
+		678DCC66259A7A5F00D2D6CB /* RadioItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678DCC65259A7A5F00D2D6CB /* RadioItemsViewModel.swift */; };
+		679262D1258DE61D00850721 /* AddNewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679262D0258DE61D00850721 /* AddNewItemView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		674EFB162580D932007B548C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 674EFAFC2580D92F007B548C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 674EFB032580D92F007B548C;
+			remoteInfo = RadioMinimal;
+		};
+		674EFB212580D932007B548C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 674EFAFC2580D92F007B548C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 674EFB032580D92F007B548C;
+			remoteInfo = RadioMinimal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		672493832588EFAC00651D0E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		672BBBFA25889836006EEB65 /* RadioItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioItem.swift; sourceTree = "<group>"; };
+		67326C3225ADC8610024FE4B /* AddNewitemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewitemViewModel.swift; sourceTree = "<group>"; };
+		67369A3C2593DDAB00217B54 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		67369A4425947B9D00217B54 /* ItemFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemFieldView.swift; sourceTree = "<group>"; };
+		67369A4925947BE000217B54 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		674EFB042580D92F007B548C /* RadioMinimal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioMinimal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		674EFB072580D92F007B548C /* RadioMinimalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioMinimalApp.swift; sourceTree = "<group>"; };
+		674EFB092580D92F007B548C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		674EFB0B2580D931007B548C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		674EFB0E2580D931007B548C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		674EFB102580D931007B548C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		674EFB152580D932007B548C /* RadioMinimalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioMinimalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		674EFB192580D932007B548C /* RadioMinimalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioMinimalTests.swift; sourceTree = "<group>"; };
+		674EFB1B2580D932007B548C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		674EFB202580D932007B548C /* RadioMinimalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadioMinimalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		674EFB242580D932007B548C /* RadioMinimalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioMinimalUITests.swift; sourceTree = "<group>"; };
+		674EFB262580D932007B548C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		674EFB352580E8F6007B548C /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
+		677FE9FC25841D4600ADE8AA /* PlayControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayControlView.swift; sourceTree = "<group>"; };
+		677FEA0225841D7100ADE8AA /* RadioItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioItemView.swift; sourceTree = "<group>"; };
+		678DCC65259A7A5F00D2D6CB /* RadioItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioItemsViewModel.swift; sourceTree = "<group>"; };
+		679262D0258DE61D00850721 /* AddNewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItemView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		674EFB012580D92F007B548C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674EFB122580D932007B548C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674EFB1D2580D932007B548C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		672493822588EF9B00651D0E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				672493832588EFAC00651D0E /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		672BBBF925889827006EEB65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				672BBBFA25889836006EEB65 /* RadioItem.swift */,
+				67369A4925947BE000217B54 /* Title.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67326C3025ADC81F0024FE4B /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				677FEA0225841D7100ADE8AA /* RadioItemView.swift */,
+			);
+			path = CellView;
+			sourceTree = "<group>";
+		};
+		67326C3125ADC8310024FE4B /* MainVontentView */ = {
+			isa = PBXGroup;
+			children = (
+				674EFB092580D92F007B548C /* ContentView.swift */,
+				678DCC65259A7A5F00D2D6CB /* RadioItemsViewModel.swift */,
+				67326C3025ADC81F0024FE4B /* CellView */,
+			);
+			path = MainVontentView;
+			sourceTree = "<group>";
+		};
+		67369A3B2593DD1800217B54 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				677FE9FC25841D4600ADE8AA /* PlayControlView.swift */,
+				67369A3C2593DDAB00217B54 /* RoundedButton.swift */,
+				67369A4425947B9D00217B54 /* ItemFieldView.swift */,
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		674EFAFB2580D92F007B548C = {
+			isa = PBXGroup;
+			children = (
+				674EFB062580D92F007B548C /* RadioMinimal */,
+				674EFB182580D932007B548C /* RadioMinimalTests */,
+				674EFB232580D932007B548C /* RadioMinimalUITests */,
+				674EFB052580D92F007B548C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		674EFB052580D92F007B548C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				674EFB042580D92F007B548C /* RadioMinimal.app */,
+				674EFB152580D932007B548C /* RadioMinimalTests.xctest */,
+				674EFB202580D932007B548C /* RadioMinimalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		674EFB062580D92F007B548C /* RadioMinimal */ = {
+			isa = PBXGroup;
+			children = (
+				677FE9F225841C1200ADE8AA /* Application */,
+				677FE9F325841C2C00ADE8AA /* Views */,
+				677FE9F425841C3D00ADE8AA /* Library */,
+				674EFB0D2580D931007B548C /* Preview Content */,
+			);
+			path = RadioMinimal;
+			sourceTree = "<group>";
+		};
+		674EFB0D2580D931007B548C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				674EFB0E2580D931007B548C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		674EFB182580D932007B548C /* RadioMinimalTests */ = {
+			isa = PBXGroup;
+			children = (
+				674EFB192580D932007B548C /* RadioMinimalTests.swift */,
+				674EFB1B2580D932007B548C /* Info.plist */,
+			);
+			path = RadioMinimalTests;
+			sourceTree = "<group>";
+		};
+		674EFB232580D932007B548C /* RadioMinimalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				674EFB242580D932007B548C /* RadioMinimalUITests.swift */,
+				674EFB262580D932007B548C /* Info.plist */,
+			);
+			path = RadioMinimalUITests;
+			sourceTree = "<group>";
+		};
+		677FE9F225841C1200ADE8AA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				674EFB072580D92F007B548C /* RadioMinimalApp.swift */,
+				674EFB0B2580D931007B548C /* Assets.xcassets */,
+				674EFB102580D931007B548C /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		677FE9F325841C2C00ADE8AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67326C3125ADC8310024FE4B /* MainVontentView */,
+				679262CF258DE60300850721 /* AddNewItem */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		677FE9F425841C3D00ADE8AA /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				67369A3B2593DD1800217B54 /* CustomControls */,
+				672493822588EF9B00651D0E /* Manager */,
+				672BBBF925889827006EEB65 /* Models */,
+				677FE9F525841C4D00ADE8AA /* Helpers */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		677FE9F525841C4D00ADE8AA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				674EFB352580E8F6007B548C /* ColorScheme.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		679262CF258DE60300850721 /* AddNewItem */ = {
+			isa = PBXGroup;
+			children = (
+				679262D0258DE61D00850721 /* AddNewItemView.swift */,
+				67326C3225ADC8610024FE4B /* AddNewitemViewModel.swift */,
+			);
+			path = AddNewItem;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		674EFB032580D92F007B548C /* RadioMinimal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 674EFB292580D932007B548C /* Build configuration list for PBXNativeTarget "RadioMinimal" */;
+			buildPhases = (
+				674EFB002580D92F007B548C /* Sources */,
+				674EFB012580D92F007B548C /* Frameworks */,
+				674EFB022580D92F007B548C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadioMinimal;
+			productName = RadioMinimal;
+			productReference = 674EFB042580D92F007B548C /* RadioMinimal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		674EFB142580D932007B548C /* RadioMinimalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 674EFB2C2580D932007B548C /* Build configuration list for PBXNativeTarget "RadioMinimalTests" */;
+			buildPhases = (
+				674EFB112580D932007B548C /* Sources */,
+				674EFB122580D932007B548C /* Frameworks */,
+				674EFB132580D932007B548C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				674EFB172580D932007B548C /* PBXTargetDependency */,
+			);
+			name = RadioMinimalTests;
+			productName = RadioMinimalTests;
+			productReference = 674EFB152580D932007B548C /* RadioMinimalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		674EFB1F2580D932007B548C /* RadioMinimalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 674EFB2F2580D932007B548C /* Build configuration list for PBXNativeTarget "RadioMinimalUITests" */;
+			buildPhases = (
+				674EFB1C2580D932007B548C /* Sources */,
+				674EFB1D2580D932007B548C /* Frameworks */,
+				674EFB1E2580D932007B548C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				674EFB222580D932007B548C /* PBXTargetDependency */,
+			);
+			name = RadioMinimalUITests;
+			productName = RadioMinimalUITests;
+			productReference = 674EFB202580D932007B548C /* RadioMinimalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		674EFAFC2580D92F007B548C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					674EFB032580D92F007B548C = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					674EFB142580D932007B548C = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 674EFB032580D92F007B548C;
+					};
+					674EFB1F2580D932007B548C = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 674EFB032580D92F007B548C;
+					};
+				};
+			};
+			buildConfigurationList = 674EFAFF2580D92F007B548C /* Build configuration list for PBXProject "RadioMinimal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 674EFAFB2580D92F007B548C;
+			productRefGroup = 674EFB052580D92F007B548C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				674EFB032580D92F007B548C /* RadioMinimal */,
+				674EFB142580D932007B548C /* RadioMinimalTests */,
+				674EFB1F2580D932007B548C /* RadioMinimalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		674EFB022580D92F007B548C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674EFB0F2580D931007B548C /* Preview Assets.xcassets in Resources */,
+				674EFB0C2580D931007B548C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674EFB132580D932007B548C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674EFB1E2580D932007B548C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		674EFB002580D92F007B548C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674EFB0A2580D92F007B548C /* ContentView.swift in Sources */,
+				678DCC66259A7A5F00D2D6CB /* RadioItemsViewModel.swift in Sources */,
+				677FEA0325841D7100ADE8AA /* RadioItemView.swift in Sources */,
+				67369A4A25947BE000217B54 /* Title.swift in Sources */,
+				672BBBFB25889836006EEB65 /* RadioItem.swift in Sources */,
+				672493842588EFAC00651D0E /* NetworkManager.swift in Sources */,
+				67369A3D2593DDAB00217B54 /* RoundedButton.swift in Sources */,
+				679262D1258DE61D00850721 /* AddNewItemView.swift in Sources */,
+				67369A4525947B9D00217B54 /* ItemFieldView.swift in Sources */,
+				67326C3325ADC8610024FE4B /* AddNewitemViewModel.swift in Sources */,
+				674EFB362580E8F6007B548C /* ColorScheme.swift in Sources */,
+				677FE9FD25841D4600ADE8AA /* PlayControlView.swift in Sources */,
+				674EFB082580D92F007B548C /* RadioMinimalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674EFB112580D932007B548C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674EFB1A2580D932007B548C /* RadioMinimalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674EFB1C2580D932007B548C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674EFB252580D932007B548C /* RadioMinimalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		674EFB172580D932007B548C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 674EFB032580D92F007B548C /* RadioMinimal */;
+			targetProxy = 674EFB162580D932007B548C /* PBXContainerItemProxy */;
+		};
+		674EFB222580D932007B548C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 674EFB032580D92F007B548C /* RadioMinimal */;
+			targetProxy = 674EFB212580D932007B548C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		674EFB272580D932007B548C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		674EFB282580D932007B548C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		674EFB2A2580D932007B548C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RadioMinimal/Preview Content\"";
+				DEVELOPMENT_TEAM = 68EA362QKS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RadioMinimal/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.krasiuk.RadioMinimal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		674EFB2B2580D932007B548C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RadioMinimal/Preview Content\"";
+				DEVELOPMENT_TEAM = 68EA362QKS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RadioMinimal/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.krasiuk.RadioMinimal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		674EFB2D2580D932007B548C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68EA362QKS;
+				INFOPLIST_FILE = RadioMinimalTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.krasiuk.RadioMinimalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadioMinimal.app/RadioMinimal";
+			};
+			name = Debug;
+		};
+		674EFB2E2580D932007B548C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68EA362QKS;
+				INFOPLIST_FILE = RadioMinimalTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.krasiuk.RadioMinimalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RadioMinimal.app/RadioMinimal";
+			};
+			name = Release;
+		};
+		674EFB302580D932007B548C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68EA362QKS;
+				INFOPLIST_FILE = RadioMinimalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.krasiuk.RadioMinimalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RadioMinimal;
+			};
+			name = Debug;
+		};
+		674EFB312580D932007B548C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68EA362QKS;
+				INFOPLIST_FILE = RadioMinimalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.krasiuk.RadioMinimalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RadioMinimal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		674EFAFF2580D92F007B548C /* Build configuration list for PBXProject "RadioMinimal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674EFB272580D932007B548C /* Debug */,
+				674EFB282580D932007B548C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		674EFB292580D932007B548C /* Build configuration list for PBXNativeTarget "RadioMinimal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674EFB2A2580D932007B548C /* Debug */,
+				674EFB2B2580D932007B548C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		674EFB2C2580D932007B548C /* Build configuration list for PBXNativeTarget "RadioMinimalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674EFB2D2580D932007B548C /* Debug */,
+				674EFB2E2580D932007B548C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		674EFB2F2580D932007B548C /* Build configuration list for PBXNativeTarget "RadioMinimalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674EFB302580D932007B548C /* Debug */,
+				674EFB312580D932007B548C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 674EFAFC2580D92F007B548C /* Project object */;
+}
