@@ -14,7 +14,6 @@ protocol RadioItemsViewModelProtocol {
 class RadioItemsViewModel: ObservableObject, RadioItemsViewModelProtocol {
 
     private var networkService: NetworkServiceProtocol!
-    private var task: AnyCancellable?
     
     @Published var stations = [RadioItem]()    
 
@@ -26,7 +25,7 @@ class RadioItemsViewModel: ObservableObject, RadioItemsViewModelProtocol {
     
     func fetchStations() {
         
-        self.networkService.request(url: .stations, method: .get, model: [RadioItem].self) { (result) in
+        self.networkService.request(point: .stations) { (result: Result<[RadioItem], Failure>) in
             switch result {
             case .success(let stations):
                 self.stations = stations

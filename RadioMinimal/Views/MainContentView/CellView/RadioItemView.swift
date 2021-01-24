@@ -31,6 +31,6 @@ struct RadioItemView: View {
 
 struct RadioItemView_Previews: PreviewProvider {
     static var previews: some View {
-        RadioItemView(item: RadioItem(id: 1, title: "Americas Country", genre: "Country, Rock", type: "Music", country: "USA", url: ""))
+        RadioItemView(item: RadioItem(title: "Americas Country", genre: "Country, Rock", type: "Music", country: "USA", url: ""))
     }
 }

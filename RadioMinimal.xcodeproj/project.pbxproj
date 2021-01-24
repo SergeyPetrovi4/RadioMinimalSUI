@@ -20,6 +20,7 @@
 		674EFB1A2580D932007B548C /* RadioMinimalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674EFB192580D932007B548C /* RadioMinimalTests.swift */; };
 		674EFB252580D932007B548C /* RadioMinimalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674EFB242580D932007B548C /* RadioMinimalUITests.swift */; };
 		674EFB362580E8F6007B548C /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674EFB352580E8F6007B548C /* ColorScheme.swift */; };
+		6757DEE125BB77A700835A56 /* StationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6757DEE025BB77A700835A56 /* StationsService.swift */; };
 		677FE9FD25841D4600ADE8AA /* PlayControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677FE9FC25841D4600ADE8AA /* PlayControlView.swift */; };
 		677FEA0325841D7100ADE8AA /* RadioItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677FEA0225841D7100ADE8AA /* RadioItemView.swift */; };
 		678DCC66259A7A5F00D2D6CB /* RadioItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678DCC65259A7A5F00D2D6CB /* RadioItemsViewModel.swift */; };
@@ -63,6 +64,7 @@
 		674EFB242580D932007B548C /* RadioMinimalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioMinimalUITests.swift; sourceTree = "<group>"; };
 		674EFB262580D932007B548C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		674EFB352580E8F6007B548C /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
+		6757DEE025BB77A700835A56 /* StationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsService.swift; sourceTree = "<group>"; };
 		677FE9FC25841D4600ADE8AA /* PlayControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayControlView.swift; sourceTree = "<group>"; };
 		677FEA0225841D7100ADE8AA /* RadioItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioItemView.swift; sourceTree = "<group>"; };
 		678DCC65259A7A5F00D2D6CB /* RadioItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioItemsViewModel.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		672493822588EF9B00651D0E /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				6757DEE825BB77C200835A56 /* Services */,
 				672493832588EFAC00651D0E /* NetworkManager.swift */,
 			);
 			path = Manager;
@@ -194,6 +197,14 @@
 				674EFB262580D932007B548C /* Info.plist */,
 			);
 			path = RadioMinimalUITests;
+			sourceTree = "<group>";
+		};
+		6757DEE825BB77C200835A56 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6757DEE025BB77A700835A56 /* StationsService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		677FE9F225841C1200ADE8AA /* Application */ = {
@@ -375,6 +386,7 @@
 				674EFB0A2580D92F007B548C /* ContentView.swift in Sources */,
 				678DCC66259A7A5F00D2D6CB /* RadioItemsViewModel.swift in Sources */,
 				677FEA0325841D7100ADE8AA /* RadioItemView.swift in Sources */,
+				6757DEE125BB77A700835A56 /* StationsService.swift in Sources */,
 				67369A4A25947BE000217B54 /* Title.swift in Sources */,
 				672BBBFB25889836006EEB65 /* RadioItem.swift in Sources */,
 				672493842588EFAC00651D0E /* NetworkManager.swift in Sources */,

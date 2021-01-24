@@ -18,29 +18,46 @@ enum Failure: Error {
 enum HTTPMethod: String {
     case get = "GET"
     case post = "POST"
+    case delete = "DELETE"
 }
 
-enum API: String {
-    case stations = "http://radiostations.gleeze.com:3000/stations/"
+protocol EndPointProtocol {
+
+    associatedtype Body: Decodable
+    
+    var base: String { get }
+    var path: String { get }
+    var method: HTTPMethod { get }
+    var body: Body? { get }
+}
+
+extension EndPointProtocol {
+    var base: String {
+        return "http://radiostations.gleeze.com:3000"
+    }
 }
 
 protocol NetworkServiceProtocol {
-    func request<GenericData: Decodable>(url: API, method: HTTPMethod, model: GenericData.Type, completion: @escaping (Result<GenericData, Failure>) -> Void)
+    func request<GenericModel: Decodable>(point: StationsService, completion: @escaping (Result<GenericModel, Failure>) -> Void)
 }
 
 struct NetworkManager: NetworkServiceProtocol {
     
-    func request<GenericData: Decodable>(url: API, method: HTTPMethod, model: GenericData.Type, completion: @escaping (Result<GenericData, Failure>) -> Void) {
+    func request<GenericModel: Decodable>(point: StationsService, completion: @escaping (Result<GenericModel, Failure>) -> Void) {
         
-        guard let url = URL(string: url.rawValue) else {
+        guard let url = URL(string: "\(point.base)\(point.path)") else {
             debugPrint("<====  Failed to load data! ====>")
             return
         }
         
         var request = URLRequest(url: url)
-        request.httpMethod = method.rawValue
+        request.httpMethod = point.method.rawValue
         request.cachePolicy = URLRequest.CachePolicy.reloadIgnoringLocalCacheData
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        if let data = point.body, let body = try? JSONEncoder().encode(data) {
+            request.httpBody = body
+        }
         
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             
@@ -55,7 +72,7 @@ struct NetworkManager: NetworkServiceProtocol {
                     return
                 }
 
-                guard let genericObject = try? JSONDecoder().decode(GenericData.self, from: data) else {
+                guard let genericObject = try? JSONDecoder().decode(GenericModel.self, from: data) else {
                     completion(.failure(.decoding))
                     return
                 }
